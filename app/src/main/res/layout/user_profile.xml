@@ -1,5 +1,6 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -13,8 +14,8 @@
             android:id="@+id/collapsing_toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:contentScrim="?attr/colorPrimary"
             android:elevation="40dp"
+            app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
             <ImageView
@@ -22,7 +23,8 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/profile_page_background"
                 android:scaleType="centerCrop"
-                app:layout_collapseMode="parallax" />
+                app:layout_collapseMode="parallax"
+                android:elevation="0dp" />
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -30,38 +32,103 @@
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ayush.11"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="@dimen/vertical_margin_medium"/>
+
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:padding="24dp">
+        android:padding="24dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <TextView android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Date of Birth" />
-            <TextView android:layout_width="wrap_content"
+                android:layout_marginBottom="@dimen/vertical_margin_small"
+                android:text="DATE OF BIRTH"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Date of Birth" />
-            <TextView android:layout_width="wrap_content"
+                android:layout_marginBottom="@dimen/vertical_margin_large"
+                android:text="April 3, 1995"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Date of Birth"/>
-            <TextView android:layout_width="wrap_content"
+                android:layout_marginBottom="@dimen/vertical_margin_small"
+                android:text="CONTACTS"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Date of Birth"/>
-            <TextView android:layout_width="wrap_content"
+                android:layout_marginBottom="@dimen/vertical_margin_large"
+                android:text="9465832654"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Date of Birth"/>
-            <TextView android:layout_width="wrap_content"
+                android:layout_marginBottom="@dimen/vertical_margin_small"
+                android:text="ADDRESS"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Date of Birth"/>
+                android:layout_marginBottom="@dimen/vertical_margin_large"
+                android:text="12323, Street 43,Texas,Virginia"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/vertical_margin_large"
+                android:layout_marginTop="@dimen/vertical_margin_small"
+                android:text="Change Password"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:text="Save"
+                android:id="@+id/save_button"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@drawable/save_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vertical_margin_medium"
+                android:layout_marginBottom="@dimen/vertical_margin_medium"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/textColorInverse"
+                android:paddingBottom="8dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingEnd="24dp"
+                android:paddingStart="24dp"
+                android:paddingTop="8dp" />
+
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 

@@ -3,4 +3,8 @@
     <color name="colorPrimary">#0D3951</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#59AFE2</color>
+    <color name="textColor">#818181</color>
+    <color name="textColorInverse">#FFFFFF</color>
+    <color name="colorGold">#FBB03C</color>
+    <color name="colorTeal">#008D68</color>
 </resources>
