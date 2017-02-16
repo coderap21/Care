@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/padding_large"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <healthandcharity.socialcause.care.MLRoundedImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/dummy_profile_pic"
+            android:layout_marginBottom="@dimen/vertical_margin_large"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            android:id="@+id/nav_drawer_img"/>
+
+        <TextView
+            android:text="Ayush "
+            android:layout_width="match_parent"
+            android:textAppearance="@style/expandedBar"
+            android:textStyle="normal"
+            android:layout_height="wrap_content"
+            android:id="@+id/nav_drawer_profile_img"
+            android:gravity="center_horizontal" />
+
+</LinearLayout>
