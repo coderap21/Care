@@ -1,27 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/padding_large"
-    app:layout_anchorGravity="center">
+    android:background="@android:color/white"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <TextView
-        android:text="This is about organisation."
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/textColor"
-        android:id="@+id/about_organisation_tv"
-        android:layout_weight="3" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_large">
 
-    <TextView
-        android:text="3.4"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textColor="@color/colorGold"
-        android:id="@+id/rating_tv"
-        android:layout_weight="1" />
-</LinearLayout>
+        <TextView
+            android:id="@+id/about_organisation_tv"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content"
+            android:text="This is about organisation."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/textColor" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rating_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3.4"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="48sp"
+                android:textColor="@color/colorGold"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:src="@drawable/star"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
