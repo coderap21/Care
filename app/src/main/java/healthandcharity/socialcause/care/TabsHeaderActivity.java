@@ -71,7 +71,7 @@ public class TabsHeaderActivity extends AppCompatActivity implements TabLayout.O
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new AboutFragment(),"About");
-        adapter.addFrag(new AboutFragment(),"Review");
+        adapter.addFrag(new Main(),"Review");
         adapter.addFrag(new AboutFragment(),"Events");
         viewPager.setAdapter(adapter);
     }

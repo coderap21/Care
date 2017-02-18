@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include layout="@layout/user_profile"/>
+    <include layout="@layout/review_fragment"/>
 
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
