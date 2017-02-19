@@ -5,22 +5,14 @@ package healthandcharity.socialcause.care;
  */
 
 public class Review {
-    private int reviewID;
+    private int imageResourceId;
     private String username;
     private String comment;
 
-    Review(int id,String name, String comment){
+    Review(int imageId,String name, String comment){
         this.comment=comment;
-        this.reviewID = id;
         this.username=name;
-    }
-
-    public int getReviewID() {
-        return reviewID;
-    }
-
-    public void setReviewID(int reviewID) {
-        this.reviewID = reviewID;
+        this.imageResourceId = imageId;
     }
 
     public String getUsername() {
@@ -37,5 +29,13 @@ public class Review {
 
     public void setComment(String comment) {
         this.comment = comment;
+    }
+
+    public int getImageResourceId() {
+        return imageResourceId;
+    }
+
+    public void setImageResourceId(int imageResourceId) {
+        this.imageResourceId = imageResourceId;
     }
 }

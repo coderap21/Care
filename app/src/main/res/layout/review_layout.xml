@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="72dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:elevation="0dp">
+    android:layout_height="wrap_content"
+    android:minHeight="60dp"
+    android:padding="@dimen/padding_small">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <healthandcharity.socialcause.care.MLRoundedImageView
+        android:id="@+id/review_row_imageview"
+        android:layout_marginTop="@dimen/vertical_margin_small"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:elevation="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dummy_profile_pic" />
 
-        <healthandcharity.socialcause.care.MLRoundedImageView
-            android:id="@+id/review_row_imageview"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:src="@drawable/dummy_profile_pic"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginEnd="@dimen/activity_horizontal_margin"
-            android:scaleType="centerCrop"
-            android:elevation="4dp"/>
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/vertical_margin_small"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/review_row_imageview"
+        android:fontFamily="sans-serif"
+        android:layout_toEndOf="@id/review_row_imageview"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/textColor" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/user_name"
-            android:layout_toRightOf="@id/review_row_imageview"
-            android:layout_alignParentTop="true"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/textColor" />
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_toEndOf="@id/review_row_imageview"
+        android:layout_toRightOf="@id/review_row_imageview"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/textColor"
+        android:textStyle="normal" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/comment"
-            android:textStyle="normal"
-            android:layout_below="@id/user_name"
-            android:layout_toRightOf="@id/review_row_imageview"
-            android:layout_toEndOf="@id/review_row_imageview"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@color/textColor"/>
-
-    </RelativeLayout>
-</android.support.v7.widget.CardView>
+</RelativeLayout>

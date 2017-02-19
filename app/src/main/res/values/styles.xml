@@ -15,6 +15,7 @@
         <item name="android:listPreferredItemHeight">96dp</item>
         <item name="android:layout_margin">24dp</item>
     </style>
+
     <style name="expandedBar" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">32sp</item>
