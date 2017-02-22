@@ -47,8 +47,7 @@ public class TabsHeaderActivity extends AppCompatActivity implements TabLayout.O
 
         ImageView header = (ImageView) findViewById(R.id.profile_pic);
 
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(),
-                R.drawable.profile_page_background);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.collapsing_toolbar_background);
 
         Palette.from(bitmap).generate(new Palette.PaletteAsyncListener() {
             @SuppressWarnings("ResourceType")
@@ -57,8 +56,8 @@ public class TabsHeaderActivity extends AppCompatActivity implements TabLayout.O
 
                 int vibrantColor = palette.getVibrantColor(R.color.colorPrimary);
                 int vibrantDarkColor = palette.getDarkVibrantColor(R.color.colorPrimary);
-                collapsingToolbarLayout.setContentScrimColor(vibrantColor);
-                collapsingToolbarLayout.setStatusBarScrimColor(vibrantDarkColor);
+                collapsingToolbarLayout.setContentScrimColor(R.color.colorPrimary);
+                collapsingToolbarLayout.setStatusBarScrimColor(R.color.colorPrimary);
             }
         });
 

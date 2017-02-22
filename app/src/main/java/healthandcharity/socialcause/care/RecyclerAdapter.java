@@ -16,8 +16,8 @@ import java.util.ArrayList;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ReviewViewHolder> {
     ArrayList<Review> reviews = new ArrayList<>();
-    RecyclerAdapter(ArrayList<Review> arrayList){
-        reviews = arrayList;
+    RecyclerAdapter(ArrayList<Review> reviews){
+        this.reviews = reviews;
     }
 
     @Override
