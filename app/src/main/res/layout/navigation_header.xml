@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    This layout file was made by Ayush Gupta.
+    This file is a part of Care app.
+    Care is an app developed for project in curriculum, to be submitted to
+    the college. The college holds no rights, whatsoever, on the distribution
+    or the modification of the content of the app in neither of the
+    app GUI, the database, not the functionality.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/padding_large"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/vertical_margin_medium"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <healthandcharity.socialcause.care.MLRoundedImageView
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:src="@drawable/dummy_profile_pic"
+            android:layout_marginBottom="@dimen/vertical_margin_large"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            android:id="@+id/nav_drawer_img"/>
+
+        <TextView
+            android:text="Ayush Gupta"
+            android:layout_width="match_parent"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="normal"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorInverse"
+            android:id="@+id/nav_drawer_profile_img"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:text="ayush.11"
+            android:layout_width="match_parent"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+            android:textStyle="normal"
+            android:layout_height="wrap_content"
+            android:id="@+id/nav_drawer_username"
+            android:gravity="center_horizontal" />
+
+</LinearLayout>

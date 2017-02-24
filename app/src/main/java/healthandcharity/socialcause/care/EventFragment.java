@@ -15,7 +15,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Ayush Gupta on 2/20/2017.
+ * This java file was created by Ayush Gupta.
+ This file is a part of Care app.
+ Care is an app developed for project in curriculum, to be submitted to
+ the college. The college holds no rights, whatsoever, on the distribution
+ or the modification of the content of the app in neither of the
+ app GUI, the database, not the functionality.
  */
 
 public class EventFragment extends Fragment {

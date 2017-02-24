@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    This layout file was made by Ayush Gupta.
+    This file is a part of Care app.
+    Care is an app developed for project in curriculum, to be submitted to
+    the college. The college holds no rights, whatsoever, on the distribution
+    or the modification of the content of the app in neither of the
+    app GUI, the database, not the functionality.
+-->
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -54,6 +62,7 @@
                 android:layout_height="104dp"
                 android:gravity="top"
                 android:minHeight="?attr/actionBarSize"
+                android:fitsSystemWindows="true"
                 app:layout_collapseMode="pin"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"

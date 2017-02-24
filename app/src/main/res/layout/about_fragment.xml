@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    This layout file was made by Ayush Gupta.
+    This file is a part of Care app.
+    Care is an app developed for project in curriculum, to be submitted to
+    the college. The college holds no rights, whatsoever, on the distribution
+    or the modification of the content of the app in neither of the
+    app GUI, the database, not the functionality.
+-->
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -11,41 +19,55 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:padding="@dimen/padding_large">
-
-        <TextView
-            android:id="@+id/about_organisation_tv"
-            android:layout_width="0dp"
-            android:layout_weight="3"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_height="wrap_content"
-            android:text="This is about organisation."
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@color/textColor" />
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_large">
 
             <TextView
-                android:id="@+id/rating_tv"
-                android:layout_width="match_parent"
+                android:id="@+id/about_organisation_tv"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="3.4"
-                android:gravity="center"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="48sp"
-                android:textColor="@color/colorGold"
-                android:textStyle="bold" />
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_weight="3"
+                android:lineSpacingMultiplier="1.2"
+                android:text="This is about organisation."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/textColor" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="32dp"
-                android:src="@drawable/star"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/rating_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="3.4"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/colorGold"
+                    android:textSize="48sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:src="@drawable/icon_star" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/textColor"
+            android:visibility="invisible" />
+    </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

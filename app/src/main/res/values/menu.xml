@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="drawer_menu">
-        <item>Home</item>
-        <item>Donation History</item>
-        <item>Logout</item>
-    </string-array>
-</resources>

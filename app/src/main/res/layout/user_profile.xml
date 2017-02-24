@@ -1,3 +1,12 @@
+<!--
+    This layout file was made by Ayush Gupta.
+    This file is a part of Care app.
+    Care is an app developed for project in curriculum, to be submitted to
+    the college. The college holds no rights, whatsoever, on the distribution
+    or the modification of the content of the app in neither of the
+    app GUI, the database, not the functionality.
+-->
+
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -36,15 +45,22 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/profile_page_background"
+                android:background="@drawable/collapsing_toolbar_background"
                 android:scaleType="centerCrop"
                 app:layout_collapseMode="parallax"
                 android:elevation="0dp" />
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E60D3951"
+                android:id="@+id/view"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax"/>
+
             <healthandcharity.socialcause.care.MLRoundedImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@drawable/profile_page_background"
                 android:layout_gravity="center"
                 android:src="@drawable/dummy_profile_pic"
                 android:scaleType="center"

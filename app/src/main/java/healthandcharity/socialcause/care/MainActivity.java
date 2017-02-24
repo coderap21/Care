@@ -20,29 +20,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_profile);
 
-        final Toolbar toolbar = (Toolbar) findViewById(R.id.htab_toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //final Toolbar toolbar = (Toolbar) findViewById(R.id.htab_toolbar);
+        //setSupportActionBar(toolbar);
+        //getSupportActionBar().setTitle("");
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        final CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.htab_collapse_toolbar);
+        final CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
         collapsingToolbarLayout.setTitleEnabled(false);
 
         ImageView header = (ImageView) findViewById(R.id.profile_pic);
 
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(),
-                R.drawable.profile_page_background);
-
-        Palette.from(bitmap).generate(new Palette.PaletteAsyncListener() {
-            @SuppressWarnings("ResourceType")
-            @Override
-            public void onGenerated(Palette palette) {
-
-                int vibrantColor = palette.getVibrantColor(R.color.colorPrimary);
-                int vibrantDarkColor = palette.getDarkVibrantColor(R.color.colorPrimary);
-                collapsingToolbarLayout.setContentScrimColor(vibrantColor);
-                collapsingToolbarLayout.setStatusBarScrimColor(vibrantDarkColor);
-            }
-        });
     }
 }

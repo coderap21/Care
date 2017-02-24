@@ -8,7 +8,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by Ayush Gupta on 2/15/2017.
+ * This java file was created by Ayush Gupta.
+ This file is a part of Care app.
+ Care is an app developed for project in curriculum, to be submitted to
+ the college. The college holds no rights, whatsoever, on the distribution
+ or the modification of the content of the app in neither of the
+ app GUI, the database, not the functionality.
  */
 
 public class AboutFragment extends Fragment {

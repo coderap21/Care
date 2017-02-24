@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    This layout file was made by Ayush Gupta.
+    This file is a part of Care app.
+    Care is an app developed for project in curriculum, to be submitted to
+    the college. The college holds no rights, whatsoever, on the distribution
+    or the modification of the content of the app in neither of the
+    app GUI, the database, not the functionality.
+-->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

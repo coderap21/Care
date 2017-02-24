@@ -11,10 +11,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.graphics.Palette;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -23,17 +26,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TabsHeaderActivity extends AppCompatActivity implements TabLayout.OnTabSelectedListener{
+    private DrawerLayout mDrawerLayout;
+    private ActionBarDrawerToggle mToggle;
+    private Toolbar toolbar;
     ViewPager viewPager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tabs_header);
+        setContentView(R.layout.activity_main);
 
 
-        final Toolbar toolbar = (Toolbar) findViewById(R.id.htab_toolbar);
+        toolbar = (Toolbar) findViewById(R.id.htab_toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.nav_drawer);
+        mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.openDrawerTitle, R.string.closeDrawerTitle);
+
+        mDrawerLayout.addDrawerListener(mToggle);
+        mToggle.syncState();
+
 
         viewPager = (ViewPager) findViewById(R.id.htab_viewpager);
         setupViewPager(viewPager);
@@ -57,10 +69,18 @@ public class TabsHeaderActivity extends AppCompatActivity implements TabLayout.O
                 int vibrantColor = palette.getVibrantColor(R.color.colorPrimary);
                 int vibrantDarkColor = palette.getDarkVibrantColor(R.color.colorPrimary);
                 collapsingToolbarLayout.setContentScrimColor(R.color.colorPrimary);
-                collapsingToolbarLayout.setStatusBarScrimColor(R.color.colorPrimary);
+                collapsingToolbarLayout.setStatusBarScrimColor(android.R.color.transparent);
             }
         });
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (mToggle.onOptionsItemSelected(item)){
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private void setupViewPager(ViewPager viewPager) {

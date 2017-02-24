@@ -3,7 +3,9 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@android:color/transparent</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
@@ -11,7 +13,7 @@
     <style name="navigationDrawer" parent="Base.TextAppearance.AppCompat">
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textColor">@color/textColorInverse</item>
-        <item name="android:textSize">32sp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:listPreferredItemHeight">96dp</item>
         <item name="android:layout_margin">24dp</item>
     </style>
@@ -20,16 +22,12 @@
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">32sp</item>
         <item name="android:textStyle">bold</item>
-        <!--<item name="android:windowActionBar">false</item>-->
     </style>
+
 
     <style name="collapsedBar" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">24sp</item>
-    </style>
-
-    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
-
     </style>
 
     <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
