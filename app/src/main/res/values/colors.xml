@@ -7,5 +7,6 @@
     <color name="textColorInverse">#FFFFFF</color>
     <color name="colorGold">#FBB03C</color>
     <color name="colorTeal">#008D68</color>
+    <color name="colorGreen">#39b54a</color>
     <color name="colorPrimaryTransparent">#A90D3951</color>
 </resources>

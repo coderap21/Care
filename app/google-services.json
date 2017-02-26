@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "611510429013",
+    "firebase_url": "https://care-7adaa.firebaseio.com",
+    "project_id": "care-7adaa",
+    "storage_bucket": "care-7adaa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611510429013:android:28da9c21a5f6dc11",
+        "android_client_info": {
+          "package_name": "healthandcharity.socialcause.care"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611510429013-eomvo98r3hv2so0m44lhno1tdpc7ho9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxxycyIkqkpaz7ban6f9pCiz5aegFZjXU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
