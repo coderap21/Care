@@ -1,4 +1,5 @@
 <resources>
+    <string name="facebook_app_id">254456558333942</string>
     <string name="app_name">Care</string>
     <string name="user_name">Ayush</string>
     <string name="openDrawerTitle"></string>
