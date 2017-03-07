@@ -4,6 +4,8 @@
 
     <uses-feature android:name="android.hardware.sensor.stepcounter" />
     <uses-feature android:name="android.hardware.sensor.stepdetector" />
+    <supports-screens android:xlargeScreens="true" />
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,7 +14,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".login_activity">
+        <activity android:name=".login_activity"
+            android:configChanges="density">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,12 +24,13 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".DonationHistoryActivity" />
-        <activity android:name=".sign_up"></activity>
+        <activity android:name=".sign_up" />
+
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
 
-
+        <activity android:name=".running"></activity>
     </application>
 
 </manifest>
